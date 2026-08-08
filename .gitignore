@@ -1,0 +1,23 @@
+# Environment variables
+.env
+.env.local
+*.pyc
+__pycache__/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Session files (keep local only)
+*.session
+*.session-journal
+generate_session.py
+
+# OS
+.DS_Store
+Thumbs.db
