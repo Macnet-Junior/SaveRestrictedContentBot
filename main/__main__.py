@@ -3,9 +3,13 @@ from pathlib import Path
 from main.utils import load_plugins
 import logging
 from . import bot
+from .server import start_server
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
+
+# Start HTTP server to prevent sleep on free hosting
+start_server()
 
 path = "main/plugins/*.py"
 files = glob.glob(path)
